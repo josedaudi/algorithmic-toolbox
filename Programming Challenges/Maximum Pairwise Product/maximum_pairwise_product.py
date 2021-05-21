@@ -1,5 +1,5 @@
 # python3
-import random
+# import random
 
 
 def max_pairwise_product_naive(numbers):
@@ -34,23 +34,23 @@ def max_pairwise_product(numbers):
 
 
 if __name__ == '__main__':
-    while True:
-        _n = random.randint(2, 10)
-        print(f'{_n}')
-        a = []
-        for i in range(0, _n):
-            a.append(random.randint(10, 100000))
-        for i in range(0, _n):
-            print(f'{a[i]}  ', end='')
-        print('\n')
-        _res_a = max_pairwise_product_naive(a)
-        _res_b = max_pairwise_product(a)
-
-        if _res_a != _res_b:
-            print(f'Wrong Answer: {_res_a} {_res_b}')
-            break
-        else:
-            print('OK\n')
+    # while True:
+    #     _n = random.randint(2, 10)
+    #     print(f'{_n}')
+    #     a = []
+    #     for i in range(0, _n):
+    #         a.append(random.randint(10, 100000))
+    #     for i in range(0, _n):
+    #         print(f'{a[i]}  ', end='')
+    #     print('\n')
+    #     _res_a = max_pairwise_product_naive(a)
+    #     _res_b = max_pairwise_product(a)
+    #
+    #     if _res_a != _res_b:
+    #         print(f'Wrong Answer: {_res_a} {_res_b}')
+    #         break
+    #     else:
+    #         print('OK\n')
 
     n = int(input())
     input_numbers = list(map(int, input().split()))

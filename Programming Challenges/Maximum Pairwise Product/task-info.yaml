@@ -6,7 +6,7 @@ files:
 - name: maximum_pairwise_product.py
   visible: true
   placeholders:
-  - offset: 453
+  - offset: 455
     length: 456
     placeholder_text: type here
     initial_state:
