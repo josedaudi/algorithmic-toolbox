@@ -34,6 +34,7 @@ def max_pairwise_product(numbers):
 
 
 if __name__ == '__main__':
+    # Stress testing
     # while True:
     #     _n = random.randint(2, 10)
     #     print(f'{_n}')

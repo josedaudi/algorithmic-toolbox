@@ -2,6 +2,7 @@
 
 
 def fibonacci_number_naive(n):
+    print("Compute F sub", n)
     assert 0 <= n <= 45
 
     if n <= 1:
@@ -12,8 +13,14 @@ def fibonacci_number_naive(n):
 
 def fibonacci_number(n):
     assert 0 <= n <= 45
+    if n <= 1:
+        return n
 
-    type here
+    a, b, c = 0, 1, 0
+    for _ in range(n - 1):
+        c = a + b
+        b, a = c, b
+    return c
 
 
 if __name__ == '__main__':
